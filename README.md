@@ -26,7 +26,7 @@ output code: ```<label>.tex```
 	\includegraphics[width=\textwidth]{figures/<label>.png}
 	\caption{\href{run:./htmls/<label>.html}{(View source) <caption>}}
 	\label{fig:<label>}
-\end{figure}'
+\end{figure}
 ```
 
 
@@ -43,7 +43,7 @@ Beside the output LaTeX code, two additional files are created:
 
 All that’s left to do, is a simple input flag in your LaTeX code. Make sure, that the main LaTeX file is in the same directory as the folders „htmls“ and „figures“:
 ```latex
-\input{figures/<label>.tex}
+\input{figures/<label>/<label>.tex}
 ```
 If you hand the compiled PDF document to someone, also make sure that the reader opens the PDF in the same directory as the folder „htmls“.
 
